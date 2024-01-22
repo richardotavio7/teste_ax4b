@@ -52,4 +52,4 @@ python manage.py runserver
 
 O servidor estará disponivel no endereço:
 
-http://localhost:8000
+http://localhost:8000/posts
