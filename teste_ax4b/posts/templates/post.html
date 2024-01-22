@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.body }}</p>
+    <br/>
+    {% if comment_list %}
+        <h4>Comentários:</h4>
+        {% for comment in comment_list %}
+            <li>
+                <strong>Nome:</strong> {{ comment.name }} <br>
+                <strong>Email:</strong> {{ comment.email }} <br>
+                <strong>Comentário:</strong> {{ comment.body }} <br>
+            </li>
+            <br/>
+        {% endfor %}
+    {% else %}
+        <p><b>Nenhum comentário disponível.</b></p>
+    {% endif %}
+{% endblock %}

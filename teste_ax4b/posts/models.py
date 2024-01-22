@@ -6,7 +6,7 @@ class Usuarios(models.Model):
     email = models.CharField(max_length=100)
 
     def __str__(self):
-        return self.title
+        return self.name
 
 
 class Postagens(models.Model):
@@ -27,7 +27,7 @@ class Comentarios(models.Model):
     post_id = models.ForeignKey(Postagens, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.post_id
+        return self.email
 
 
 
