@@ -20,6 +20,12 @@ Para Linux:
 source ./venv/bin/activate
 ```
 
+Instale as bibliotecas necessarias:
+
+```
+pip install -r requirements.txt
+```
+
 Acesse a pasta do Projeto: 
 
 ```
